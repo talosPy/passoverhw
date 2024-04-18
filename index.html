@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    
+   <script>
+    // PAGE 17 - FIBONACCI
+    function fibonacci(n) {
+    let fib = [0, 1];
+    for (let i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib;
+    }
+
+    let fibNumbers = fibonacci(15);
+    console.log("The first 15 Fibonacci numbers are:");
+    console.log(fibNumbers.join(", "));
+
+    //PAGE 17 - FIZZBUZZ
+    for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FIZZBUZZ");
+    } else if (i % 3 === 0) {
+        console.log("FIZZ");
+    } else if (i % 5 === 0) {
+        console.log("BUZZ");
+    } else {
+        console.log(i);
+    }
+    }
+
+   </script> 
 </body>
 </html>
