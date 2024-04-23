@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // PRACTICE 1
+
+      function findAndLogLargerNumber(num1, num2) {
+        if (num1 > num2) {
+          console.log('The larger number is:', num1)
+        } else {
+          console.log('The larger number is:', num2)
+        }
+      }
+      findAndLogLargerNumber(5, 7)
+
+      // PRACTICE 2
+
+      function checkEvenOrOdd(number) {
+        if (number % 2 === 0) {
+          console.log('even')
+        } else {
+          console.log('odd')
+        }
+      }
+      checkEvenOrOdd(6)
+
+      // PRACTICE 3
+
+      function reverseString(str) {
+        let reversed = ''
+        for (let i = str.length - 1; i >= 0; i--) {
+          reversed += str[i]
+        }
+        console.log(reversed)
+      }
+      reverseString('Talos')
+
+      // PRACTICE 4
+
+      function repeatString(str, num) {
+        let repeatedString = ''
+        for (let i = 0; i < num; i++) {
+          repeatedString += str
+        }
+        console.log(repeatedString)
+      }
+
+      repeatString('Talos', 5)
+
+      // PRACTICE 5
+
+      function isPrime(number) {
+        if (number <= 1) {
+          console.log(false)
+          return
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+          if (number % i === 0) {
+            console.log(false)
+            return
+          }
+        }
+        console.log(true)
+      }
+      isPrime(11) // This should log true
+      isPrime(12) // This should log false
+
+      // PRACTICE 6
+
+      function countVowels(str) {
+        let vowelCount = 0
+        const vowels = ['a', 'e', 'i', 'o', 'u']
+
+        for (let char of str.toLowerCase()) {
+          if (vowels.includes(char)) {
+            vowelCount++
+          }
+        }
+
+        console.log(vowelCount)
+      }
+
+      countVowels('Talos') // This should log 2
+      countVowels('Tal') // This should log 1
+
+      // PRACTICE 7
+
+      function factorial(num) {
+        let result = 1
+        for (let i = 2; i <= num; i++) {
+          result *= i
+        }
+        console.log(result)
+      }
+
+      factorial(6) // This should log 720 (1*2*3*4*5*6 = 720)
+      factorial(0) // This should log 1
+
+      // PRACTICE 8
+
+      function isPalindrome(str) {
+        let reversed = ''
+        for (let i = str.length - 1; i >= 0; i--) {
+          reversed += str[i]
+        }
+
+        console.log(str.toLowerCase() === reversed.toLowerCase())
+      }
+
+      // Example usage
+      isPalindrome('radar') // This should log true
+      isPalindrome('Talos') // This should log false
+    </script>
+  </body>
+</html>
