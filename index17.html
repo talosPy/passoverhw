@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // PRACTICE 1
+
+      let num1 = 5
+      let num2 = 6
+      let num3 = 7
+      let num4 = 8
+
+      let sum = num1 + num2 + num3 + num4
+      let average = sum / 4
+
+      console.log('Sum:', sum)
+      console.log('Average:', average)
+
+      // PRACTICE 2
+
+      let str = '123'
+      let num = 123
+      let bool = true
+
+      console.log('= :')
+      console.log((str = num)) // 123
+      console.log((str = bool)) // true
+      console.log((num = bool)) // true
+
+      console.log('== :')
+      console.log(str == num) // true
+      console.log(str == bool) // true
+      console.log(num == bool) // true
+
+      console.log('=== :')
+      console.log(str === num) // false
+      console.log(str === bool) // false
+      console.log(num === bool) // false
+
+      console.log('+ :')
+      console.log(str + num) // "123123"
+      console.log(str + bool) // "123true"
+      console.log(num + bool) // 124
+
+      console.log('- :')
+      console.log(str - num) // 0
+      console.log(str - bool) // 122
+      console.log(num - bool) // 122
+
+      console.log('* :')
+      console.log(str * num) // 15129
+      console.log(str * bool) // 123
+      console.log(num * bool) // 123
+
+      console.log('> :')
+      console.log(str > num) // false
+      console.log(str > bool) // false
+      console.log(num > bool) // true
+
+      // PRACTICE 3
+
+      let str1 = '345'
+      let num5 = 345
+      let bool1 = false
+      let str2 = '123'
+      let num6 = 123
+      let bool2 = true
+
+      console.log(num5 > num6) // Output: true
+    </script>
+  </body>
+</html>
