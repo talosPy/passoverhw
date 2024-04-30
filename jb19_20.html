@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // PAGE 19
+
+      let number = 30
+      if (number % 3 === 0 && number % 5 === 0) {
+        console.log('YEAH IT DOES')
+      }
+
+      // PRACTICE 1
+
+      let numbers = [10, 15, 20]
+      numbers.sort((a, b) => a - b)
+      console.log(...numbers)
+
+      // PRACTICE 2
+
+      let grade = 100
+      let assessment
+
+      if (grade < 55) {
+        assessment = 'Below Satisfactory'
+      } else if (grade >= 55 && grade <= 64) {
+        assessment = 'Satisfactory'
+      } else if (grade >= 65 && grade <= 74) {
+        assessment = 'Nearly Good'
+      } else if (grade >= 75 && grade <= 84) {
+        assessment = 'Good'
+      } else if (grade >= 85 && grade <= 94) {
+        assessment = 'Very Good'
+      } else {
+        assessment = 'Excellent'
+      }
+
+      console.log("Yossi's assessment is:", assessment)
+
+      // PRACTICE 3
+
+      let A = 2,
+        B = 3,
+        C = 8,
+        D = 4,
+        E = 1,
+        F = 11
+
+      let det = A * E - B * D
+
+      if (det !== 0) {
+        let x = (C * E - B * F) / (A * E - B * D)
+        let y = (A * F - C * D) / (A * E - B * D)
+        console.log('Solution: x =', x, 'y =', y)
+      } else {
+        console.log('The system does not have a unique solution.')
+      }
+
+      // PRACTICE 4
+
+      let year = 2109
+      if (year % 4 === 0) {
+        if (year % 100 !== 0 || year % 400 === 0) {
+          console.log(year + ' is a leap year.')
+        } else {
+          console.log(year + ' is not a leap year.')
+        }
+      } else {
+        console.log(year + ' is not a leap year.')
+      }
+
+      // PRACTICE 5
+
+      let year1 = 2024
+      let daysInFebruary
+
+      if ((year1 % 4 === 0 && year1 % 100 !== 0) || year1 % 400 === 0) {
+        daysInFebruary = 29
+      } else {
+        daysInFebruary = 28
+      }
+
+      console.log('February', year1, 'had', daysInFebruary, 'days.')
+    </script>
+  </body>
+</html>
