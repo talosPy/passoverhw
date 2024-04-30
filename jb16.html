@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// PRACTICE 1
+
+let a = 5, b = 10, c = 15;
+let sum = a + b + c;
+let avg = sum / 3;
+console.log('Sum:', sum, 'Average:', avg);
+
+// PRACTICE 2
+
+let length = 10
+let width = 10
+let area = length * width
+let scope = length * 2 + width * 2
+console.log('area', area, 'scope', scope)
+
+// PRACTICE 3
+
+let depth = 30, diameter = 20;
+let radius = diameter / 2;
+let capacity = Math.PI * Math.pow(radius, 2) * depth;
+console.log('Capacity:', capacity);
+
+// PRACTICE 4
+
+let movieLengthMinutes = 88;
+let hours = Math.floor(movieLengthMinutes / 60);
+let minutes = movieLengthMinutes % 60;
+console.log('The movie length is:', hours, 'hours and', minutes, 'minutes');
+
+// PRACTICE 5
+
+let number1 = 2345;
+let rightmostDigit = number1 % 10;
+console.log('The rightmost digit is:', rightmostDigit);
+
+// PRACTICE 6
+
+let number2 = 2345;
+let secondRightmostDigit = Math.floor((number2 % 100) / 10);
+console.log('The second rightmost digit is:', secondRightmostDigit);
+
+// PRACTICE 7
+
+let number3 = 500;
+let strNumber = number3.toString();
+let leftmostDigit = strNumber.charAt(0);
+console.log('The leftmost digit is:', leftmostDigit);
+
+// PRACTICE 8
+
+let number4 = 26
+let number5 = 2
+let number6 = 6
+let sum2 = number5 + number6
+console.log('the sum of 26 is:', sum2);
+
+// PRACTICE 9
+
+let inputNumber = 47;
+let swappedNumber = parseInt(inputNumber.toString().split('').reverse().join(''));
+console.log('Input:', inputNumber, 'Output:', swappedNumber);
+
+// PRACTICE 10
+
+let number = 8.5;
+let nearestEven = Math.ceil(number / 2) * 2;
+console.log('Nearest even number:', nearestEven);
+
+
+
+
+
+    </script>
+</body>
+</html>
